@@ -60,7 +60,7 @@ def admin(username, password):
         click.echo('Creating user...')
         user = User(username=username, name='Admin')
         user.set_password(password)
-        db.session.add(suer)
+        db.session.add(user)
     
     db.session.commit()
     click.echo('Done')
